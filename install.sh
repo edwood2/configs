@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -xeu
-
 sudo apt-get install \
     zsh              \
     tmux             \
@@ -14,8 +12,15 @@ fi
 
 SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
 
-# setup dotfiles
-ln -s $SCRIPT_DIR/zshrc ~/.zshrc
+set -x
 
+# setup zsh
+ln -s -f $SCRIPT_DIR/zshrc ~/.zshrc
+cp _mwg.zsh-theme ~/.oh-my-zsh/themes/
 
+# setup vim
+ln -s -f $SCRIPT_DIR/vimrc ~/.vimrc
+
+# setup tmux
+ln -s -f $SCRIPT_DIR/tmux.conf ~/.tmux.conf
 
