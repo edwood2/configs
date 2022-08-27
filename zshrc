@@ -55,6 +55,7 @@ ZSH_THEME="_mwg"
 plugins=(
  git
  z
+ dircycle
 )
 
 source $ZSH/oh-my-zsh.sh
