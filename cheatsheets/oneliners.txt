@@ -1,0 +1,27 @@
+
+Linux one-liners
+
+repeat last commd
+$ sudo ls
+
+place argument of most recent command on shell
+ALT+.
+
+invoke editor and put current line into opened file
+ctrl-x e
+formatted mount: $ mount | column -t
+keep commad: <ctrl+u> [...] <ctrl+y>
+make 'less' be like 'tail -f': $ less +F <file>
+
+
+add public key to authorized_keys file on remote machine
+ssh-copy-id -i ~/.ssh/ssh_host_rsa_key.pub <user@remote>
+
+
+# batch resize of image files (using convert from 
+$ apt-get install imagemagick
+$ for i in $(ls); do convert $i -resize 50% s_$i; done
+
+# execute command on all found files
+# beispiel: kopiere alle mp4 files aus allen subfoldern die mit "Taras Welt S02" starten
+$ find ./Taras\ Welten\ S02E* -name "*.mp4" -exec cp {} /media/manuel/usb \;

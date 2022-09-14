@@ -1,0 +1,8 @@
+
+Problem: syncthing kann nicht mehr beim booten automatisch starten
+Grund: encrypted home wird erst spät gemounted, nachdem systemd service syncthing versucht zu starten
+Lösung: für syncthing nicht den "system" systemd verwenden sondern "user" systemd
+  - https://bugs.archlinux.org/task/42103
+  - 
+"I assumed I would be able to install the service in the user instance of systemd with `systemctl --user enable syncthing.service`, but since there's no corresponding unit in /usr/lib/systemd/user I did not succeed. However, I got it to work by adding the following unit file at ~/.config/systemd/user/syncthing.service"
+

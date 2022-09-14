@@ -1,0 +1,22 @@
+
+** update expiry date for an existing gpg key **
+
+gpg --edit-key 5EA00887D32277CDE075D161E48F7524EA4E5EA4
+gpg> expire
+...
+gpg> key 1   # to select 1st subkey
+gpg> expire
+...
+gpg> save
+
+* update key on keyserver using key-id
+gpg --send-keys --keyserver hkp://pgp.mit.edu 0xe48f7524ea4e5ea4
+gpg --send-keys --keyserver hkps://keys.openpgp.org 0xe48f7524ea4e5ea4
+
+
+* search for keys on keyserver:
+https://keyserver.ubuntu.com
+
+* import/update thunderbird
+manally import updated public key
+
