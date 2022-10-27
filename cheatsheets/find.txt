@@ -1,0 +1,4 @@
+# execute command on all found files
+# beispiel: kopiere alle mp4 files aus allen subfoldern die mit "Taras Welt S02" starten
+
+$ find ./Taras\ Welten\ S02E* -name "*.mp4" -exec cp {} /media/manuel/usb \;

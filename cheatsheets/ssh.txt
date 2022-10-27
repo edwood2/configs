@@ -1,0 +1,4 @@
+# add public key to authorized_keys file on remote machine
+
+ssh-copy-id -i ~/.ssh/ssh_host_rsa_key.pub <user@remote>
+

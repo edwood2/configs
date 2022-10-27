@@ -1,0 +1,9 @@
+
+# print first 3 lines of a file:
+sed -n "1,3p" file.txt
+sed "3q" file.txt
+
+# print first lines until pattern:
+sed -n "1,/pattern/p" example.csv
+sed "/pattern/q" example.csv
+

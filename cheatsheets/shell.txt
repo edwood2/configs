@@ -1,0 +1,19 @@
+
+# repeat last commd
+$ !!
+
+# place argument of most recent command on shell
+
+ALT+.
+
+# invoke editor and put current line into opened file
+<ctrl-x> e
+
+# keep commad:
+<ctrl+u> [...] <ctrl+y>
+
+# formatted mount:
+$ mount | column -t
+
+# make 'less' be like 'tail -f':
+$ less +F <file>
