@@ -3,7 +3,6 @@
 $ !!
 
 # place argument of most recent command on shell
-
 ALT+.
 
 # invoke editor and put current line into opened file
