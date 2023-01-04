@@ -56,6 +56,7 @@ plugins=(
  git
  z
  dircycle
+ zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -98,4 +99,3 @@ source $ZSH/oh-my-zsh.sh
 cheat () {
   curl "cheat.sh/$1"
 }
-

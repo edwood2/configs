@@ -17,6 +17,9 @@ set -x
 # setup zsh
 ln -s -f $SCRIPT_DIR/zshrc ~/.zshrc
 cp _mwg.zsh-theme ~/.oh-my-zsh/themes/
+## install zsh-autosuggestions plugin
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
 
 # setup vim
 ln -s -f $SCRIPT_DIR/vimrc ~/.vimrc
