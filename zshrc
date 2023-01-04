@@ -94,4 +94,8 @@ source $ZSH/oh-my-zsh.sh
 #export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 #source /usr/local/bin/virtualenvwrapper.sh
 
+# access/download cheat sheets
+cheat () {
+  curl "cheat.sh/$1"
+}
 
