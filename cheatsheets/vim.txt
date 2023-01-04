@@ -1,0 +1,10 @@
+
+search and replace:
+:%s/text/replace/g
+
+search for spaces and replace with newline:
+:%s/\s/\r/g
+
+delete from cursor to EOL
+D$
+
