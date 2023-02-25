@@ -2,18 +2,14 @@ name: CI
 
 on:
   push:
-    branches: [ "master" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+    branches:
+      - master
 
 jobs:
-  build:
+  shellcheck:
+    name: Shellcheck
     runs-on: ubuntu-latest
-
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      - name: ShellCheck
-      - uses: ludeeus/action-shellcheck@2.0.0
-      
+      - name: Run ShellCheck
+        uses: ludeeus/action-shellcheck@master
