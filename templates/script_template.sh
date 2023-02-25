@@ -79,3 +79,5 @@ while true; do
             ;;
     esac
 done
+
+echo "Debug =" $DEBUG", Outfile =" "$outFile", Infile = "$1"

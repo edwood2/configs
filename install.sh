@@ -18,7 +18,7 @@ ln -s -f "$SCRIPT_DIR"/zshrc ~/.zshrc
 ln -s -f "$SCRIPT_DIR"/oh-my-zsh/themes/_mwg.zsh-theme ~/.oh-my-zsh/themes/_mwg.zsh-theme
 ## install zsh-autosuggestions plugin (if not installed already)
 if [[ ! -d ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions ]]; then
-    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"/plugins/zsh-autosuggestions
 fi
 
 
