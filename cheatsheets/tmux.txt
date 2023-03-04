@@ -1,3 +1,0 @@
-# copy/paste from/to system clipboard
-
-hold down shift brings back OS default behavior

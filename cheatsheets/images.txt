@@ -1,4 +1,0 @@
-
-# batch resize of image files (using convert from
-$ apt-get install imagemagick
-$ for i in $(ls); do convert $i -resize 50% s_$i; done

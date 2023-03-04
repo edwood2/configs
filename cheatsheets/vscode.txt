@@ -1,6 +1,0 @@
-
-
-** exclude files from beeing watched for changes **
-
-settings.watcherExclude
-
