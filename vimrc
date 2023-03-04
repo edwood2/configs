@@ -11,3 +11,6 @@ set softtabstop=0 " Number of spaces a <Tab> counts for. When 0, featuer is off 
 set smarttab      " Inserts blanks on a <Tab> key (as per sw, ts and sts).
 
 set autoindent    " Copy indent from current line when starting a new line.
+
+syntax on         " enable syntax hightligthing
+

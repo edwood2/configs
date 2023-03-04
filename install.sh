@@ -28,3 +28,6 @@ ln -s -f "$SCRIPT_DIR"/vimrc ~/.vimrc
 # setup tmux
 ln -s -f "$SCRIPT_DIR"/tmux.conf ~/.tmux.conf
 
+# setup git (TODO: move this to checked in gitconfig)
+git config --global core.editor "vim"
+
