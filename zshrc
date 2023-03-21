@@ -57,6 +57,7 @@ plugins=(
  z
  dircycle
  zsh-autosuggestions
+ fzf
 )
 
 source $ZSH/oh-my-zsh.sh

@@ -1,17 +1,23 @@
 #!/usr/bin/env bash
 
-sudo apt-get install \
+set -euo pipefail
+
+sudo apt update && sudo apt install \
     zsh              \
-    tmux
+    fzf              \
+    tmux             \
+    git              \
+    curl
 
 # install oh-my-zsh (only if not installed yet)
-if [ -z "$ZSH" ]; then
+if [ -z "${ZSH-}" ]; then
+    export RUNZSH=no    # do not run zsh after following install to continue the script
     sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 
-SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
-
 set -x
+
+SCRIPT_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && pwd -P)
 
 # setup zsh
 ln -s -f "$SCRIPT_DIR"/zshrc ~/.zshrc
