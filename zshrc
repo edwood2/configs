@@ -100,3 +100,7 @@ source $ZSH/oh-my-zsh.sh
 cheat () {
   curl "cheat.sh/$1"
 }
+
+# enable bracketed paste
+autoload -Uz bracketed-paste-magic
+zle -N bracketed-paste bracketed-paste-magic
