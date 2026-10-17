@@ -36,5 +36,9 @@ ln -s -f "$SCRIPT_DIR"/tmux.conf ~/.tmux.conf
 
 # setup git (TODO: move this to checked in gitconfig)
 git config --global core.editor "vim"
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status
 
 zsh
